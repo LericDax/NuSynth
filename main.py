@@ -10,6 +10,7 @@ duration = 2.0      # Duration of the note in seconds
 frequency = 440     # Default frequency (A4 note)
 
 # Function to generate ADSR envelope
+# FIX
 def generate_adsr_envelope(attack, decay, sustain, release, sample_rate, note_length):
     attack_samples = int(sample_rate * attack)
     decay_samples = int(sample_rate * decay)
